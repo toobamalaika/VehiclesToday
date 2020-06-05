@@ -37,6 +37,40 @@ p{
 .float-left{
     float: left;
 }
+.navbar-expand-lg {
+  justify-content: space-between;
+}
+.navbar-light .navbar-nav .nav-link {
+  border-bottom: 1px groove green;
+  color: rgb(113, 113, 113);
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  /* border-radius: 10px; */
+  background: #f7f7f7;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 5px solid;
+  border-right: 5px solid transparent;
+  border-bottom: 0;
+  color: #3f9815;
+  border-left: 5px solid transparent;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  border-top: 3px groove green;
+  border-bottom: none;
+  color: rgb(113, 113, 113);
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 10px;
+  background: #f7f7f7;
+}
 /* Services Card */
 .card-section{
     margin: 40px;
@@ -423,8 +457,7 @@ p{
 ////////////////////////////////////////////////   */
 .form {
   position: relative;
-  top: 15%;
-  width: 350px;
+  margin: 40px 0;
   padding: 40px 40px 60px;
   border-radius: 10px;
   background: #f7f7f7;
@@ -451,9 +484,9 @@ p{
   margin-bottom: 5px;
   font-size: 18px;
 }
-.form .input .inputBox input {
-  width: 100%;
-    height: 50px;
+.form .input .inputBox input , .form .input .inputBox textarea  {
+    width: 100%;
+    min-height: 50px;
     color: #7b7b7b;
     background: #f3f3f3;
     border: none;
@@ -487,4 +520,38 @@ p{
 }
 .forget a {
   color: #4CAF50;
+}
+.p-25{
+  padding: 25px;
+    width: 80%;
+    margin: 0 10%;
+}
+.iframe{
+  width: 100%;
+  height: 400px;
+}
+.contact-social{
+  color: #343a40;
+  font-size: 30px;
+  background: #e6e6e6;
+  padding: 10px;
+  border-radius: 20px 2px;
+  text-decoration: none;
+}
+
+.contact-social:hover{
+  color: #343a40;
+  font-size: 30px;
+  background: #e6e6e6;
+  padding: 10px;
+  border-radius: 2px 20px;
+  text-decoration: none;
+}
+.about-us-text{
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #71716f;
+  letter-spacing: 1.2px;
+  padding: 25px;
 }

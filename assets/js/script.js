@@ -19,4 +19,15 @@ $(function () {
       $(".car-4").toggleClass("pCard_on");
       $(".car-4-data i").toggleClass("fa-minus");
     });
+
+    // Register link
+    $(".register-account").click(function () {
+      location.href = "register.html";
+    });
+
+    // Login link
+    $(".login-account").click(function () {
+      location.href = "index.html";
+    });
+
   });
