@@ -19,7 +19,9 @@ body {
   position: relative;
   width: 100%;
 }
-
+.inherit-font{
+  font-family:'Roboto', Arial, Helvetica, sans-serif;
+}
 p{
     margin: 0;
 }
@@ -554,4 +556,321 @@ p{
   color: #71716f;
   letter-spacing: 1.2px;
   padding: 25px;
+}
+
+/* ////////////////////////////////////////////
+   NEW CARD
+   /////////////////////////////////////////// */
+.bg-gray-200{
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:30px;
+}
+
+  .about__card {
+    position: relative;
+    padding: 30px;
+    font-family: 'Raleway';
+  }
+  .about__card::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: -12px;
+    width: 50%;
+    height: 80%;
+    background-color: #b5bb79;
+    z-index: -2;
+    }
+    .about__card::after {
+      content: "";
+      position: absolute;
+      bottom: -16px;
+      right: 32px;
+      width: 50%;
+      height: 100%;
+      background-color: #8BC34A;
+      z-index: -1;
+    }
+.buyer-section{
+  padding: 20px;
+  background-color: #343a40;
+  position: sticky;
+  }
+
+/* Buyer */
+
+.buyer-container {
+  padding: 0 0 40px 0;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.buyer-container .buyer-card {
+  position: relative;
+  border-radius: 10px;
+}
+
+.buyer-container .buyer-card .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://www.ecopetit.cat/wpic/mpic/333-3336404_imran-khan-addresses-the-un-imran-khan-in.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.7s;
+  z-index: 1;
+}
+
+.buyer-container .buyer-card:nth-child(1) .icon {
+  background: url(https://www.ecopetit.cat/wpic/mpic/333-3336404_imran-khan-addresses-the-un-imran-khan-in.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.buyer-container .buyer-card:nth-child(2) .icon {
+  background: url(https://www.ecopetit.cat/wpic/mpic/333-3336404_imran-khan-addresses-the-un-imran-khan-in.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.buyer-container .buyer-card:nth-child(3) .icon {
+  background: url(https://www.ecopetit.cat/wpic/mpic/333-3336404_imran-khan-addresses-the-un-imran-khan-in.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.buyer-container .buyer-card .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  transition: 0.7s;
+  color: #fff;
+}
+
+i.buyer-i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.7s;
+  color: #fff;
+}
+
+.buyer-container .buyer-card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.buyer-container .buyer-card .face.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.buyer-container .buyer-card:hover .face.face1{
+  background: #ff0057;
+  transform: translateY(0px);
+}
+
+.buyer-container .buyer-card .face.face1 .content {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.buyer-container .buyer-card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.buyer-container .buyer-card .face.face1 .content i{
+  max-width: 100px;
+}
+
+.buyer-container .buyer-card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 15px 15px 15px -10px #9c9c9c;
+  transform: translateY(-100px);
+}
+
+.buyer-container .buyer-card:hover .face.face2{
+  transform: translateY(0);
+}
+
+.buyer-container .buyer-card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #414141;
+}
+
+.buyer-container .buyer-card .face.face2 .content h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  color: #414141;
+} 
+
+.buyer-container a {
+  text-decoration: none;
+  color: #414141;
+}
+
+/* Our Team */
+.image-area
+{
+  top: 50%;
+  left: 50%;
+}
+
+.img-wrapper
+{
+	width: 250px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+.img-wrapper:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 180%;
+	height: 100%;
+	width: 100%;
+	background: rgba(255,255,255,.3);
+	z-index: 1;
+	transform: skew(45deg);
+	transition: .5s;
+}
+
+.img-wrapper:hover:before
+{
+	left: -180%;
+}
+
+.img-wrapper img
+{
+	height: 400px;
+	width: 250px;
+	filter: grayscale(100%);
+	transition: 2s;
+}
+.img-wrapper:hover img
+{
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+
+.img-wrapper h2
+{
+  background: #3f9815;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: perspective(400px) rotateY(90deg);
+  transform-origin: right;
+  transition: 1s;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.img-wrapper:hover h2
+{
+	transform: perspective(400px) rotateY(0deg);
+}
+
+.img-wrapper ul
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li
+{
+	background: #333;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	transform: perspective(800px) rotateY(90deg);
+	transition: .5s;
+	transform-origin: left;
+}
+
+.img-wrapper:hover ul li
+{
+	transform: perspective(800px) rotateY(0deg);
+}
+
+.img-wrapper:hover ul li:nth-child(1)
+{
+	transition-delay: .2s;
+}
+
+.img-wrapper:hover ul li:nth-child(2)
+{
+	transition-delay: .6s;
+}
+
+.img-wrapper:hover ul li:nth-child(3)
+{
+	transition-delay: .8s;
+}
+
+.img-wrapper:hover ul li:nth-child(4)
+{
+	transition-delay: 1s;
+}
+
+.img-wrapper ul li a
+{
+	color: #3f9815;
+	background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li i
+{
+	color: #3f9815;
+	background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li i:hover
+{
+	color: #fff;
+	background: rgba(255,255,255,0);
 }
