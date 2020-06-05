@@ -741,8 +741,9 @@ i.buyer-i {
 /* Our Team */
 .image-area
 {
-  top: 50%;
-  left: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 
 .img-wrapper
