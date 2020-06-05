@@ -25,8 +25,11 @@ body {
 p{
     margin: 0;
 }
+.logosize{
+  padding: 5px;
+}
 .logo{
-    padding: 5px;
+    padding: 0px;
 }
 .top-bar{
     background-color: #3f9816;
