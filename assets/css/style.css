@@ -378,16 +378,16 @@ p{
     line-height: 88px;
   }
   .car-1 .pCard_up{
-    background-image: url(http://www.simpleimageresizer.com/_uploads/photos/23c24c48/car-1_500x.jpg);
+    background-image: url('../images/cars/car-1.jpg');
   }
   .car-2 .pCard_up{
-    background-image: url(http://www.simpleimageresizer.com/_uploads/photos/23c24c48/car-2_1_500x.jpg);
+    background-image: url('../images/cars/car-2.jpg');
   }
   .car-3 .pCard_up{
-    background-image: url(http://www.simpleimageresizer.com/_uploads/photos/23c24c48/car-3_500x.jpg);
+    background-image: url('../images/cars/car-3.jpg');
   }
   .car-4 .pCard_up{
-    background-image: url(http://www.simpleimageresizer.com/_uploads/photos/23c24c48/car-4_500x.jpg);
+    background-image: url('../images/cars/car-4.jpg');
   }
   .footer-inner{
       color: #fff;
